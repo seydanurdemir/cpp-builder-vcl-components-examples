@@ -52,6 +52,13 @@ void __fastcall TFUserRegistrationForm::BSendClick(TObject *Sender)
 //	      	ShowMessage(LBInterests->Items->Strings[i]);
 //	 		}
 //	 }
+//
+//  Radio Button
+// 	if (RBGenderFemale->Checked)
+//	RBGenderFemale->Caption = input + " bla bla bla";
+// 	Nested Forms
+// 	Form2->Show();
+// 	Form2->ShowModal();
 }
 //---------------------------------------------------------------------------}
 void __fastcall TFUserRegistrationForm::BClearClick(TObject *Sender)
