@@ -10,7 +10,7 @@ object FFileContentForm: TFFileContentForm
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  Menu = MainMenu1
+  Menu = MainMenu
   OldCreateOrder = False
   DesignSize = (
     512
@@ -39,7 +39,7 @@ object FFileContentForm: TFFileContentForm
     Left = 256
     Top = 192
   end
-  object MainMenu1: TMainMenu
+  object MainMenu: TMainMenu
     Left = 128
     Top = 144
     object MAsmViewer: TMenuItem

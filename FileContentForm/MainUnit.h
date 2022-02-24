@@ -15,7 +15,7 @@ __published:	// IDE-managed Components
 	TMemo *MContent;
 	TOpenDialog *ODOpen;
 	TSaveDialog *SDSave;
-	TMainMenu *MainMenu1;
+	TMainMenu *MainMenu;
 	TMenuItem *MAsmViewer;
 	TMenuItem *MFile;
 	TMenuItem *SubLine;
