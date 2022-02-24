@@ -12,7 +12,7 @@ __fastcall TFFileContentForm::TFFileContentForm(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
-void __fastcall TFFileContentForm::BOpenClick(TObject *Sender)
+void __fastcall TFFileContentForm::MFileOpenClick(TObject *Sender)
 {
 	if (ODOpen->Execute() == true)
 	{
@@ -20,11 +20,20 @@ void __fastcall TFFileContentForm::BOpenClick(TObject *Sender)
 	}
 }
 //---------------------------------------------------------------------------
-void __fastcall TFFileContentForm::BSaveClick(TObject *Sender)
+void __fastcall TFFileContentForm::MFileSaveClick(TObject *Sender)
 {
 	if (SDSave->Execute() == true)
 	{
 		MContent->Lines->SaveToFile(SDSave->FileName);
+    }
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFFileContentForm::MExitProgramClick(TObject *Sender)
+{
+	if (Application->MessageBox(L"Are you sure?", L"Exit", MB_YESNO | MB_ICONEXCLAMATION | MB_DEFBUTTON2) == IDYES)
+	{
+		Application->Terminate();
     }
 }
 //---------------------------------------------------------------------------

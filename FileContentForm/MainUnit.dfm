@@ -10,6 +10,7 @@ object FFileContentForm: TFFileContentForm
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  Menu = MainMenu1
   OldCreateOrder = False
   DesignSize = (
     512
@@ -26,34 +27,44 @@ object FFileContentForm: TFFileContentForm
       'Content')
     TabOrder = 0
   end
-  object BSave: TButton
-    Left = 266
-    Top = 486
-    Width = 64
-    Height = 24
-    Caption = 'Save As ...'
-    TabOrder = 1
-    OnClick = BSaveClick
-  end
-  object BOpen: TButton
-    Left = 182
-    Top = 486
-    Width = 64
-    Height = 24
-    Caption = 'Open'
-    TabOrder = 2
-    OnClick = BOpenClick
-  end
   object ODOpen: TOpenDialog
     DefaultExt = '.asm'
     Filter = 'Assembly files (*.asm)|*.asm'
     Left = 256
-    Top = 136
+    Top = 144
   end
   object SDSave: TSaveDialog
     DefaultExt = '.asm'
     Filter = 'Assembly files (*.asm)|*.asm'
     Left = 256
     Top = 192
+  end
+  object MainMenu1: TMainMenu
+    Left = 128
+    Top = 144
+    object MAsmViewer: TMenuItem
+      Caption = 'AsmViewer'
+      object MFile: TMenuItem
+        Caption = 'File'
+        object MFileOpen: TMenuItem
+          Caption = 'Open'
+          OnClick = MFileOpenClick
+        end
+        object SubLine: TMenuItem
+          Caption = '-'
+        end
+        object MFileSaveAs: TMenuItem
+          Caption = 'Save As ...'
+          OnClick = MFileSaveClick
+        end
+      end
+      object Line: TMenuItem
+        Caption = '-'
+      end
+      object MExitProgram: TMenuItem
+        Caption = 'Exit Program'
+        OnClick = MExitProgramClick
+      end
+    end
   end
 end

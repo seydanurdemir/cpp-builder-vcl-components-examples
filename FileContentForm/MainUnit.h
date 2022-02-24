@@ -7,17 +7,25 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.Dialogs.hpp>
+#include <Vcl.Menus.hpp>
 //---------------------------------------------------------------------------
 class TFFileContentForm : public TForm
 {
 __published:	// IDE-managed Components
 	TMemo *MContent;
-	TButton *BOpen;
-	TButton *BSave;
 	TOpenDialog *ODOpen;
 	TSaveDialog *SDSave;
-	void __fastcall BOpenClick(TObject *Sender);
-	void __fastcall BSaveClick(TObject *Sender);
+	TMainMenu *MainMenu1;
+	TMenuItem *MAsmViewer;
+	TMenuItem *MFile;
+	TMenuItem *SubLine;
+	TMenuItem *MFileOpen;
+	TMenuItem *MFileSaveAs;
+	TMenuItem *Line;
+	TMenuItem *MExitProgram;
+	void __fastcall MFileOpenClick(TObject *Sender);
+	void __fastcall MFileSaveClick(TObject *Sender);
+	void __fastcall MExitProgramClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFFileContentForm(TComponent* Owner);
