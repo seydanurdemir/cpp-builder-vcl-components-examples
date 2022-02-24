@@ -59,4 +59,3 @@ void __fastcall TFUserRegistrationForm::BClearClick(TObject *Sender)
 	Application->MessageBox(L"You swept everything away!", L"Clear", MB_OK);
 }
 //---------------------------------------------------------------------------
-

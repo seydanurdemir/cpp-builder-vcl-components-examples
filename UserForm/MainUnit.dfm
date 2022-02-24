@@ -149,7 +149,7 @@ object FUserRegistrationForm: TFUserRegistrationForm
       Text = '0'
     end
     object UDAge: TUpDown
-      Left = 365
+      Left = 359
       Top = 98
       Width = 16
       Height = 21
@@ -229,7 +229,7 @@ object FUserRegistrationForm: TFUserRegistrationForm
       Time = 0.265533391204371600
       TabOrder = 14
     end
-    object RadioButton1: TRadioButton
+    object RBGenderNotSpecified: TRadioButton
       Left = 96
       Top = 141
       Width = 90
@@ -279,6 +279,7 @@ object FUserRegistrationForm: TFUserRegistrationForm
         'Health'
         'Technology'
         'Entertainment')
+      MultiSelect = True
       TabOrder = 19
     end
     object CBProfession: TComboBox
