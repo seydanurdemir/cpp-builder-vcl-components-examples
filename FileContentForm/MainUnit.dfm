@@ -2,8 +2,8 @@ object FFileContentForm: TFFileContentForm
   Left = 0
   Top = 0
   Caption = 'FileContentForm'
-  ClientHeight = 512
-  ClientWidth = 512
+  ClientHeight = 510
+  ClientWidth = 672
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,15 +13,15 @@ object FFileContentForm: TFFileContentForm
   Menu = MainMenu
   OldCreateOrder = False
   DesignSize = (
-    512
-    512)
+    672
+    510)
   PixelsPerInch = 96
   TextHeight = 13
   object MContent: TMemo
     Left = 0
     Top = 0
-    Width = 512
-    Height = 480
+    Width = 756
+    Height = 512
     Anchors = [akLeft, akTop, akRight, akBottom]
     Lines.Strings = (
       'Content')
