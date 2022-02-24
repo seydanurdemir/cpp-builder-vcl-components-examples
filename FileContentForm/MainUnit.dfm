@@ -61,9 +61,9 @@ object FFileContentForm: TFFileContentForm
       object Line: TMenuItem
         Caption = '-'
       end
-      object MExitProgram: TMenuItem
-        Caption = 'Exit Program'
-        OnClick = MExitProgramClick
+      object MExit: TMenuItem
+        Caption = 'Exit'
+        OnClick = MExitClick
       end
     end
   end

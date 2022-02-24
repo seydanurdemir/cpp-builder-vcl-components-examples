@@ -29,7 +29,7 @@ void __fastcall TFFileContentForm::MFileSaveClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TFFileContentForm::MExitProgramClick(TObject *Sender)
+void __fastcall TFFileContentForm::MExitClick(TObject *Sender)
 {
 	if (Application->MessageBox(L"Are you sure?", L"Exit", MB_YESNO | MB_ICONEXCLAMATION | MB_DEFBUTTON2) == IDYES)
 	{

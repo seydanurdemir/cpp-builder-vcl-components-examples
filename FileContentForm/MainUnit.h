@@ -22,10 +22,10 @@ __published:	// IDE-managed Components
 	TMenuItem *MFileOpen;
 	TMenuItem *MFileSaveAs;
 	TMenuItem *Line;
-	TMenuItem *MExitProgram;
+	TMenuItem *MExit;
 	void __fastcall MFileOpenClick(TObject *Sender);
 	void __fastcall MFileSaveClick(TObject *Sender);
-	void __fastcall MExitProgramClick(TObject *Sender);
+	void __fastcall MExitClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFFileContentForm(TComponent* Owner);
