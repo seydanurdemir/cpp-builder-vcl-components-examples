@@ -16,7 +16,7 @@ object FFileContentForm: TFFileContentForm
     512)
   PixelsPerInch = 96
   TextHeight = 13
-  object Content: TMemo
+  object MContent: TMemo
     Left = 0
     Top = 0
     Width = 512
@@ -31,8 +31,9 @@ object FFileContentForm: TFFileContentForm
     Top = 486
     Width = 64
     Height = 24
-    Caption = 'Save'
+    Caption = 'Save As ...'
     TabOrder = 1
+    OnClick = BSaveClick
   end
   object BOpen: TButton
     Left = 182
@@ -41,5 +42,18 @@ object FFileContentForm: TFFileContentForm
     Height = 24
     Caption = 'Open'
     TabOrder = 2
+    OnClick = BOpenClick
+  end
+  object ODOpen: TOpenDialog
+    DefaultExt = '.asm'
+    Filter = 'Assembly files (*.asm)|*.asm'
+    Left = 256
+    Top = 136
+  end
+  object SDSave: TSaveDialog
+    DefaultExt = '.asm'
+    Filter = 'Assembly files (*.asm)|*.asm'
+    Left = 256
+    Top = 192
   end
 end
