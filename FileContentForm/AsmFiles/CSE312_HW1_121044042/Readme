@@ -1,0 +1,83 @@
+Information About This Assignment ------------------------------------------------------------------
+
+University     : Gebze Techinal University
+Faculty        : Engineering
+Department     : Computer Engineering
+Year           : 2021
+Season         : Spring
+Class          : Third Class
+Semestr        : Sixth Semestr
+Course Code    : CSE 312
+Course Name    : Operating Systems
+Assignment     : Homework 1
+Due Date       : 05 April 2021, 23:59
+Student Name   : Seyda Nur DEMIR (CAKAR)
+Student No     : 121044042
+Tools          : GNU C/CPU and SPIM MIPS R3000
+Required Files : Shell.c, Shell.asm, ShellHelper.asm
+                 Makefile (of Spim), syscall.h/cpp (of CPU)
+                 ShowPrimes.asm, Factorize.asm, BubbleSort.asm
+Done           : Shell.c Shell.asm ShellHelper.asm
+                 Makefile (change /spim/Makefile) syscall.cpp (change /CPU/syscall.cpp) syscall.h (change /CPU/syscall.h)
+                 (I implemented my own CREATE_PROCESS_SYSCALL as constant 18 in my syscall.cpp/h files)
+                 ShowPrimes.asm, Factorize.asm, BubbleSort.asm (asm files runs on spim and turns back c shell)
+Undone         : I can not be sure whether I get it or not,
+                 I detailed here what I understand and what I did.
+
+Implementation Details -----------------------------------------------------------------------------
+
+Shell.c          >>> I coded Shell.c and compiled it on an online MIPS Compiler.
+Shell.asm        >>> I did not any change on this file, it produced from Shell.c on an online MIPS Compiler.
+ShellHelper.asm  >>> Online MIPS Compiler have some troubles about producing MIPS file for Spim,
+                     so I needed to make some changes on my produced Shell.asm file :
+                     I added .data .text and .globl segments,
+                     I added newline character to my .asciiz segments,
+                     And I changed indentation to read easy.
+                     You should use this file on spim to test my next three assembly files,
+                     Also grading my submission.
+
+1.ShowPrimes.asm >>> Prints all integers from 0 to 1000, prints prime next to prime numbers.
+                 >>> Bounds (from bound 0 and to bound 1000) are given in the code.
+2.Factorize.asm  >>> Finds and shows factors of entered integer.
+                 >>> Number (to factorize) is taken from keyboard.
+3.BubbleSort.asm >>> Sorts the given integers in increasing order as bubble sort algorithm.
+                 >>> Array (to sorted) is given in the code.
+
+Important Note About Implementation Details --------------------------------------------------------
+
+I read assignment pdf, and I implemented what it says.
+Some of us (students) asks some detailed question to you or lecturer, on ps on lecture session or with email.
+Sometimes some requirements can be change.
+I obeyed only what pdf says (for these 3 assembly files).
+
+But in Shell.c, I confused too much, but today at last lecture session, our lecturer fixed problem.
+Then I implemented this part again with second version of my homework.
+
+
+Compile and Run ------------------------------------------------------------------------------------
+
+Change your "/CPU/syscall.h","/CPU/syscall.cpp" and "/spim/Makefile" with my ones
+Command "make clean","make","sudo make install" and run spim
+You can follow this command line easily:
+spim -file "ShellHelper.asm"
+
+About Shell.c, Shell.asm and ShellHelper.asm -------------------------------------------------------
+
+I coded my Shell.c
+I compiled it on online MIPS Compiler (please visit https://godbolt.org/z/nxEWYoz96)
+I took these codes and put my submission folder without make any change
+I copied produced Shell.asm codes to ShellHelper.asm
+I made my changes on this file
+I just only add .data .text and .globl segments
+And add newline character to my .asciiz segments
+And edited indentation to read easy
+
+Thank you for reading, your interest. --------------------------------------------------------------
+
+Seyda Nur DEMIR, 121044042
+Last Update : 06/04/2021 23:10:00
+(1 day late submitted version 2)
+
+----------------------------------------------------------------------------------------------------
+------------------------------------------------END-------------------------------------------------
+----------------------------------------------------------------------------------------------------

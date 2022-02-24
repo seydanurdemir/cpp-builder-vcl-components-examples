@@ -8,14 +8,17 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 //---------------------------------------------------------------------------
-class TForm1 : public TForm
+class TFFileContentForm : public TForm
 {
 __published:	// IDE-managed Components
+	TMemo *Content;
+	TButton *BOpen;
+	TButton *BSave;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TForm1(TComponent* Owner);
+	__fastcall TFFileContentForm(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm1 *Form1;
+extern PACKAGE TFFileContentForm *FFileContentForm;
 //---------------------------------------------------------------------------
 #endif
